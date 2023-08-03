@@ -1,0 +1,6 @@
+config BR2_PACKAGE_CONFIGPL
+    bool "configpl"
+    help
+        ConfigPL utillity for Zynq-7000 devices. 
+		
+		Configures Zynq-7000 FPGA using Xilinx bitstream (in .bin format) via the Linux FPGA Manager. 

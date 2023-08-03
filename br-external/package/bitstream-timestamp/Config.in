@@ -1,0 +1,4 @@
+config BR2_PACKAGE_BITSTREAM_TIMESTAMP
+    bool "bitstream-timestamp"
+    help
+        Prints timestamp encoded into FPGA bitstream. 

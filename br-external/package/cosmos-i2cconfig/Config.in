@@ -1,0 +1,8 @@
+config BR2_PACKAGE_COSMOS_I2CCONFIG
+    bool "cosmos-i2cconfig"
+    help
+        Configures I2C peripherals of Cosmos XZQ10 board. 
+		
+		Routes clkgen0 to GTX.
+		Enables all SFP transceivers.
+		Selects LEDs and DIP switches.

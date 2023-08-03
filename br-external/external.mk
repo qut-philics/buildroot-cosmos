@@ -1,0 +1,1 @@
+include $(sort $(wildcard $(BR2_EXTERNAL_QUT_PATH)/package/*/*.mk))

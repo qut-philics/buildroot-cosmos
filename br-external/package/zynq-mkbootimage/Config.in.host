@@ -1,0 +1,9 @@
+config BR2_PACKAGE_HOST_ZYNQ_MKBOOTIMAGE
+	bool "host zynq-mkbootimage"
+	help
+	  This is an open-source replacement for the Xilinx bootgen 
+	  application. The package provides sources of two binaries 
+	  mkbootimage and exbootimage for both creation and extraction 
+	  of Zynq boot images.
+
+	  https://github.com/antmicro/zynq-mkbootimage
