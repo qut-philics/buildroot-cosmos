@@ -1,0 +1,6 @@
+config BR2_PACKAGE_ZRPROC_FIRMWARE
+    bool "zrproc-firmware"
+    help
+        Baremetal firmware compiled for loading to CPU1 via zrproc.
+		
+		Typically implement real-time control applications.

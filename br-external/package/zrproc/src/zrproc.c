@@ -325,11 +325,11 @@ int loadFirmware(const char* filename, uint32_t* entry) {
 	fclose(fw);
 
 	//Check for read errors
-    if (ferror(fw)) {
-        free(data);
-		printf("ERROR: Error reading firmware file %s.\n", filename);
-        return 1;
-    }
+    //if (ferror(fw)) {
+    //    free(data);
+	//	printf("ERROR: Error reading firmware file %s.\n", filename);
+    //    return 1;
+    //}
 
 	//Resize memory buffer to file size
     temp = realloc(data, used);
