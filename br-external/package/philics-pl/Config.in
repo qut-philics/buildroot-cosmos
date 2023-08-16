@@ -1,0 +1,32 @@
+config BR2_PACKAGE_PHILICS_PL
+    bool "philics-pl"
+    help
+        Programmable Logic (PL) bitstreams implementing PHiLICS applications.
+		
+		This package allows a user to select the PL bitstream which is to be
+		loaded to the PL fabric by the FSBL on boot. The selected bitstream
+		will be included in the boot.bin file produced by the post-image.sh 
+		script provided by the QUT external tree (br-external/board/cosmos).
+		
+if BR2_PACKAGE_PHILICS_PL
+
+choice
+	prompt "bitstream"
+	default BR2_PACKAGE_PHILICS_PL_PACPWM
+	help
+	  Select the bitstream to load at boot.
+
+config BR2_PACKAGE_PHILICS_PL_PACPWM
+	bool "pacpwm"
+	help
+	  Single-phase PACPWM modulator with configurable clock, phase increment,
+	  and compare value.
+
+config BR2_PACKAGE_PHILICS_PL_PHIL1PREGULAR
+	bool "phil-1p-regular"
+	help
+	  Single-phase PHiL amplifier with asymetric regular sampling.
+
+endchoice
+
+endif
