@@ -82,7 +82,7 @@ After customising the Linux or U-boot configurations, these changes can be perma
 
 #### FPGA bitstream
 
-By default, the `boot.bin` image is built including the FPGA bitstream in `/br-external/board/cosmos/fpga.bit`. This bitstream is loaded by the FSBL onto the FPGA fabric at boot. This bitstream can be subsequently overwritten by U-boot via the mechanisms described above, however, if a new default bitstream is permanently desired for the project, this file can be replaced with an updated version.
+By default, the `boot.bin` image is built including the FPGA bitstream selected via the `/br-external/package/philics-pl` package. This bitstream is loaded by the FSBL onto the FPGA fabric at boot. This bitstream can be subsequently overwritten by U-boot via the mechanisms described above, however, if a new default bitstream is permanently desired for the project, an alternative bitstream can be selected via the `philics-pl` package, or if it does not already exist, added to the `philics-pl` package.
 
 ## QUT packages
 
