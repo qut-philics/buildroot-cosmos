@@ -26,6 +26,12 @@ config BR2_PACKAGE_PHILICS_PL_PHIL1PREGULAR
 	bool "phil-1p-regular"
 	help
 	  Single-phase PHiL amplifier with asymetric regular sampling.
+	  
+config BR2_PACKAGE_PHILICS_PL_VSI1PREGMAF
+	bool "vsi-1p-reg-maf"
+	help
+	  Single-phase VSI with synchronous sampling, MAFs for all measurements, 
+	  and PWM using asymmetric regular sampling.
 
 endchoice
 

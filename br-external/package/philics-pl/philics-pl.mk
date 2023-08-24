@@ -13,6 +13,10 @@ ifeq ($(BR2_PACKAGE_PHILICS_PL_PHIL1PREGULAR),y)
 	PHILICS_PL_BITSTREAM = phil-1p-regular.bit
 endif
 
+ifeq ($(BR2_PACKAGE_PHILICS_PL_VSI1PREGMAF),y)
+	PHILICS_PL_BITSTREAM = vsi-1p-reg-maf.bit
+endif
+
 define PHILICS_PL_INSTALL_IMAGES_CMDS
     $(INSTALL) -D -m 0644 $(@D)/$(PHILICS_PL_BITSTREAM) $(BINARIES_DIR)/fpga.bit
 endef
