@@ -8,8 +8,9 @@ ZRPROC_FIRMWARE_DEPENDENCIES = \
 	host-arm-gnu-toolchain
 	
 ZRPROC_FIRMWARE_PROJECTS_LIST = \
-	template \
-	pacpwm
+	pacpwm \
+	phil-phaselock \
+	template
 
 ZRPROC_FIRMWARE_MAKE_OPTS = \
 	CROSS_COMPILE=$(HOST_DIR)/bin/arm-none-eabi-
