@@ -19,7 +19,7 @@ sudo apt install git build-essential cmake pkg-config libssl-dev libncurses-dev 
 
 ```
 git clone --recurse-submodules https://github.com/qut-philics/buildroot-cosmos
-cd buildroot-cosmos
+cd buildroot-cosmos/buildroot
 make BR2_EXTERNAL=../br-external zynq_cosmos_defconfig
 ```
 
